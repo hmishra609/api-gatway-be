@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: api-agteway-be
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8083/realms/main}
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: MetaData-SERVICE
+              uri: http://localhost:8081
+              predicates:
+                - Path=/api/metadata/**
+server:
+  port: 8087
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.web.servlet.function: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
