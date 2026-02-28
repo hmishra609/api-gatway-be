@@ -1,4 +1,4 @@
-package org.example.apiagtewaybe.filter;
+package org.example.apigatewaybe.filter;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

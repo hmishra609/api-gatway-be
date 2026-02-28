@@ -1,4 +1,4 @@
-package org.example.apiagtewaybe.authz;
+package org.example.apigatewaybe.authz;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

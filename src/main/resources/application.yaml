@@ -1,6 +1,6 @@
 spring:
   application:
-    name: api-agteway-be
+    name: api-gateway-be
   security:
     oauth2:
       resourceserver:

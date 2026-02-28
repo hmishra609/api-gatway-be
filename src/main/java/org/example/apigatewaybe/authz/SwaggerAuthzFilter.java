@@ -1,4 +1,4 @@
-package org.example.apiagtewaybe.authz;
+package org.example.apigatewaybe.authz;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
